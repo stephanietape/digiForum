@@ -12,3 +12,11 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 }
+
+func FormHandler(w http.ResponseWriter, r *http.Request) {
+	tpl := template.Must(template.ParseFiles("views/form.html"))
+	if err := tpl.Execute(w, nil); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+}

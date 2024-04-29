@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body,
+  input {
+    
+    background-color: #EEF4F0;
+  }
+
+  .col-md-8 h1 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: Arial, sans-serif; /* Changer la police selon vos préférences */
+  
+  }
+  .col-md-8 p{
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Nunito'; 
+    text-align: center;
+    width: 50%;
+  }
+
+  .col-md-8 a {
+    display: inline-block;
+    padding: 8px 45px;
+    border-radius: 20px; /* Pour arrondir les coins */
+    background-color: #2BC2AB; /* Changer la couleur de fond selon vos besoins */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Supprimer le soulignement du lien */
+    margin-top: 50px;
+  }
+  
+  .col-md-8 a:hover{
+    background-color: #2c9686;
+    transition: 0.5s;
+  }
+  .col-md-8 a::after {
+    content: '\2192'; /* Code unicode pour une flèche vers la droite */
+    margin-left: 5px; /* Espacement entre le texte et la flèche */
+  }
+  
+  /* Si vous voulez que la flèche soit blanche, ajoutez la propriété de couleur */
+  .col-md-8 a::after {
+    color: white; /* Couleur de la flèche */
+  }
+  
+  /* Pour changer la taille de la flèche, ajustez la taille de la police */
+  .col-md-8 a::after {
+    font-size: 16px; /* Taille de la flèche */
+  }
+  nav > a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+    font-family: 'Nunito'; 
+  }
+
+
+
+  #container {
+
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    
+  }
+
+  #container > div{
+
+  }
