@@ -60,7 +60,12 @@
     font-family: 'Nunito'; 
   }
 
-
+  nav > .conn:hover{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+    font-family: 'Nunito'; 
+  }
 
   #container {
 
