@@ -112,7 +112,6 @@ document.querySelector(".sign-in-form").addEventListener("submit", function (eve
         .then(data => {
             // Afficher la réponse du serveur
             console.log("Réponse du serveur:", data);
-
             // Afficher une notification de succès
             var notificationDiv = document.getElementById("notificationCon");
             notificationDiv.textContent = "connexion réussie !  ";
@@ -121,17 +120,20 @@ document.querySelector(".sign-in-form").addEventListener("submit", function (eve
             //vider les champs
             document.querySelector(".usernamePass").value = "";
             document.querySelector(".motdepasse").value = "";
+            // Rediriger vers la page d'accueil si la connexion est réussie
+
             // Effacer la notification après 3 secondes
             setTimeout(function () {
                 notificationDiv.textContent = ""; // Effacer le contenu de la div
                 notificationDiv.style.opacity = 0;
             }, 1000); // Durée en millisecondes (3 secondes dans cet exemple)
-
+            setTimeout(function () {
+                window.location.href = "forum/acceuil";
+            }, 2000); // Durée en millisecondes (3 secondes dans cet exemple)
 
         })
         .catch(error => {
             console.error("Erreur:", error.message);
-
 
         });
 });
