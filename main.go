@@ -21,6 +21,7 @@ func main() {
 	http.HandleFunc("/register", controllers.RegisterUserHandler)
 	http.HandleFunc("/connexion", controllers.ConnexionUserHandler)
 	http.HandleFunc("/forum/acceuil", controllers.ForumAcceuilHandler)
+	http.HandleFunc("/deconnexion", controllers.DeconnexionHandler)
 	// Démarrer le serveur HTTP sur le port 8080
 	fmt.Println("Server running on port 8081")
 	log.Fatal(http.ListenAndServe(":8081", nil))

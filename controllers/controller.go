@@ -8,8 +8,11 @@ import (
 	"html/template"
 	"net/http"
 
+	"github.com/gorilla/sessions"
 	"golang.org/x/crypto/bcrypt"
 )
+
+var store = sessions.NewCookieStore([]byte("cAR35t342MvhTt"))
 
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
 	tpl := template.Must(template.ParseFiles("views/index.html"))
@@ -28,6 +31,21 @@ func FormHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func ForumAcceuilHandler(w http.ResponseWriter, r *http.Request) {
+
+	session, err := store.Get(r, "digiforum")
+	if err != nil {
+		http.Error(w, "Erreur de session", http.StatusInternalServerError)
+		return
+	}
+
+	// Vérifier si l'utilisateur est authentifié
+	userID, ok := session.Values["username"].(string)
+	if !ok {
+		// L'utilisateur n'est pas authentifié, rediriger vers la page de connexion
+		http.Redirect(w, r, "/form", http.StatusFound)
+		return
+	}
+	fmt.Println(userID)
 
 	tpl := template.Must(template.ParseFiles("views/acceuil.html"))
 	if err := tpl.Execute(w, nil); err != nil {
@@ -83,8 +101,7 @@ func RegisterUserHandler(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-//Connexion
-
+// Connexion
 func ConnexionUserHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("connexionnnnn")
 	if r.Method == "POST" {
@@ -121,6 +138,30 @@ func ConnexionUserHandler(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
+		// Créer une session pour l'utilisateur
+
+		session, err := store.Get(r, "digiforum")
+		if err != nil {
+			http.Error(w, "Erreur de session", http.StatusInternalServerError)
+			return
+		}
+
+		session.Values["username"] = user.Username
+		// Définir d'autres valeurs de session si nécessaire
+
+		// Définir l'expiration de la session
+		session.Options = &sessions.Options{
+			MaxAge:   1800, // durée de vie de la session en secondes (ici,30 min)
+			HttpOnly: true,
+			Secure:   true,
+		}
+
+		// Enregistrer la session
+		err = session.Save(r, w)
+		if err != nil {
+			http.Error(w, "Erreur de session", http.StatusInternalServerError)
+			return
+		}
 		// Authentification réussie
 		// Vous pouvez renvoyer une réponse avec un code de statut 200 pour indiquer une connexion réussie
 		// ou renvoyer des données supplémentaires sur l'utilisateur connecté si nécessaire
@@ -128,6 +169,27 @@ func ConnexionUserHandler(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Connexion réussie"))
 
 	}
+}
+
+// deconnexion
+func DeconnexionHandler(w http.ResponseWriter, r *http.Request) {
+	// Récupérer la session de l'utilisateur
+	session, err := store.Get(r, "digiforum")
+	if err != nil {
+		http.Error(w, "Erreur de session", http.StatusInternalServerError)
+		return
+	}
+
+	// Supprimer le cookie de session en fixant la durée de vie à une valeur négative
+	session.Options.MaxAge = -1
+	err = session.Save(r, w)
+	if err != nil {
+		http.Error(w, "Erreur de session", http.StatusInternalServerError)
+		return
+	}
+
+	// Rediriger l'utilisateur vers la page d'accueil ou une autre page
+	http.Redirect(w, r, "/", http.StatusFound)
 }
 
 // fonction pour verifier si un utilisateur exist dans la base de donnée

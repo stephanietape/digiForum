@@ -1,5 +1,4 @@
 body {
-    margin-top: 20px;
     color: #1a202c;
     text-align: left;
     background-color: #e2e8f0;
@@ -9,6 +8,12 @@ body {
     position: relative;
     height: calc(100vh - 3.5rem);
     transition: transform 0.3s;
+}
+
+#header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 @media (min-width: 992px) {
