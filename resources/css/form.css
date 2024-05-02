@@ -150,6 +150,7 @@ form.sign-in-form {
 .btn:hover {
   background-color: #2BC2AB;
 }
+
 .panels-container {
   position: absolute;
   height: 100%;
@@ -270,11 +271,51 @@ form.sign-in-form {
   pointer-events: all;
 }
 
+#notificationCon {
+  position: fixed;
+  top: -50px;
+  left: 35%;
+  padding: 10px 20px;
+  background-color: rgba(66, 184, 66, 0.8);
+  /* Vert */
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  /* Masqué par défaut */
+  font-family: Arial, sans-serif;
+}
+
+#notification {
+  position: fixed;
+  top: -50px;
+  left: 25%;
+  padding: 10px 20px;
+  background-color: rgba(66, 184, 66, 0.8);
+  /* Vert */
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  /* Masqué par défaut */
+  font-family: Arial, sans-serif;
+
+}
+
+#notification.show {
+  opacity: 1;
+  /* Affiché lorsque la classe "show" est présente */
+}
+
+
 @media (max-width: 870px) {
   .container {
     min-height: 800px;
     height: 100vh;
   }
+
   .signin-signup {
     width: 100%;
     top: 95%;
@@ -381,9 +422,11 @@ form.sign-in-form {
   .image {
     display: none;
   }
+
   .panel .content {
     padding: 0.5rem 1rem;
   }
+
   .container {
     padding: 1.5rem;
   }

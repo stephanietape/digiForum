@@ -24,7 +24,6 @@ func InsertUser(user User) error {
 	if err != nil {
 		return err
 	}
-	fmt.Println("oooooooooooooooooooooooooooo")
 	db, errs := initializers.GetDb()
 	if errs != nil {
 		return errs
@@ -44,7 +43,6 @@ func InsertUser(user User) error {
 	if err != nil {
 		return err
 	}
-
 	fmt.Println("Utilisateur inséré avec succès")
 	return nil
 }

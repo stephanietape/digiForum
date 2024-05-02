@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Discussion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../resources/css/style.css" />
+
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <div class="container">
+        <div class="main-body p-0">
+            <div class="inner-wrapper">
+
+                <div class="inner-sidebar">
+
+                    <div class="inner-sidebar-header justify-content-center">
+                        <button class="btn btn-primary has-icon btn-block" type="button" data-toggle="modal"
+                            data-target="#threadModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-plus mr-2">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            Nouvelle discussion
+                        </button>
+                    </div>
+
+
+                    <div class="inner-sidebar-body p-0">
+                        <div class="p-3 h-100" data-simplebar="init">
+                            <div class="simplebar-wrapper" style="margin: -16px;">
+                                <div class="simplebar-height-auto-observer-wrapper">
+                                    <div class="simplebar-height-auto-observer"></div>
+                                </div>
+                                <div class="simplebar-mask">
+                                    <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                        <div class="simplebar-content-wrapper"
+                                            style="height: 100%; overflow: hidden scroll;">
+                                            <div class="simplebar-content" style="padding: 16px;">
+                                                <nav class="nav nav-pills nav-gap-y-1 flex-column">
+                                                    <a href="javascript:void(0)"
+                                                        class="nav-link nav-link-faded has-icon active">Discussions</a>
+                                                    <a href="javascript:void(0)"
+                                                        class="nav-link nav-link-faded has-icon">Populaires cette
+                                                        semaine</a>
+                                                    <a href="javascript:void(0)"
+                                                        class="nav-link nav-link-faded has-icon">Résolus</a>
+                                                    <a href="javascript:void(0)"
+                                                        class="nav-link nav-link-faded has-icon">Non-Résolus</a>
+                                                    <a href="javascript:void(0)"
+                                                        class="nav-link nav-link-faded has-icon">Pas de réponses</a>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="simplebar-placeholder" style="width: 234px; height: 292px;"></div>
+                            </div>
+                            <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                                <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                            </div>
+                            <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+                                <div class="simplebar-scrollbar"
+                                    style="height: 151px; display: block; transform: translate3d(0px, 0px, 0px);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="inner-main">
+                    <div class="inner-main-body p-2 p-sm-3 collapse forum-content show">
+                        <div class="card mb-2">
+                            <div class="card-body p-2 p-sm-3">
+                                <div class="media forum-item">
+                                    <a href="#" data-toggle="collapse" data-target=".forum-content"><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUq1a5vqvxvuU1zJDPF0g2_xqggrjEOB-tFfKdxqFqlJmTRb7m0GA0yfZhyVGvQzB4NDU&usqp=CAU"
+                                            class="mr-3 rounded-circle" width="50" alt="User" /></a>
+                                    <div class="media-body">
+                                        <h6><a href="#" data-toggle="collapse" data-target=".forum-content"
+                                                class="text-body">Adi KONE</a></h6>
+                                        <p class="text-secondary">
+                                            Débutante en Laravel
+                                        </p>
+                                        <p class="text-muted"><a href="javascript:void(0)">Stephanie</a> a repondu <span
+                                                class="text-secondary font-weight-bold">Il y a 13 minutes</span></p>
+                                    </div>
+                                    <div class="text-muted small text-center align-self-center">
+                                        <span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 19</span>
+                                        <span><i class="far fa-comment ml-2"></i> 2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2">
+                            <div class="card-body p-2 p-sm-3">
+                                <div class="media forum-item">
+                                    <a href="#" data-toggle="collapse" data-target=".forum-content"><img
+                                            src="https://st2.depositphotos.com/1514397/5893/i/450/depositphotos_58939069-stock-photo-woman-with-ideal-skin.jpg"
+                                            class="mr-3 rounded-circle" width="50" alt="User" /></a>
+                                    <div class="media-body">
+                                        <h6><a href="#" data-toggle="collapse" data-target=".forum-content"
+                                                class="text-body">Stephanie TAPE</a></h6>
+                                        <p class="text-secondary">
+                                            Full-stack developper
+                                        </p>
+                                        <p class="text-muted"><a href="javascript:void(0)">Emma</a> a repondu <span
+                                                class="text-secondary font-weight-bold">Il y a 3 heures</span></p>
+                                    </div>
+                                    <div class="text-muted small text-center align-self-center">
+                                        <span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 18</span>
+                                        <span><i class="far fa-comment ml-2"></i> 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2">
+                            <div class="card-body p-2 p-sm-3">
+                                <div class="media forum-item">
+                                    <a href="#" data-toggle="collapse" data-target=".forum-content"><img
+                                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFxcVFRcVFRcXFxUVFxcWFxUXFxUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0OFQ8PDy0ZFRktKystKystKysrKysrLSsrNzcrNysrKysrNzctLS0rKysrKzctKysrNysrKysrKysrK//AABEIAQoAvgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAABAAIFBgcEAwj/xAA+EAABAwIEAwYEAwgBAwUAAAABAAIRAwQFEiExBkFREyJhcYGRBzKhsUJSwRQjYnKCktHw4TOi8RUXJENz/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwC0gIpIoCE5BEIAikkgSKSSBJJLw/baeYszjMNwdD/uiDoSUUMYbncCRoYaAN/Enku6pdsbEu32+6D3hKEy3rNe0OaZB2Tw4IEkikgCSKSAFBFJAECnIIGFBOKCAJBJEICEQgE4IEkilCBQkUlA8V3txSa11JvdHee4QT0y5TvuDvyKDyxziU2ziDSLmCJcHbExoRHiq/jfFVOt3Q0idJ0zAg6H76KtX2Nuq5u0JkgjNAkxsDGkclBv6gwrialXYw+IMnXvEnXX9FM0eJnPa4VBMgNGXTLG2nQHU+SpudPbXhUWanjzwS5r3AjRmsx1gbDZe1pxVWbLWHXMSXOJcSNdNSqiHlOa+NUGscD3znGo19Y1CYdqZieQVuWC2d++mZYSHdQdR5LR+D8bZl/fVoc46B530EunlMjnyKguaSKSigkiggCBTkEDUCnFBA0IwkigQRQTggKSQRQcOK4gKDM5EyQAJ3lZnxPxRWrEtPdYJGVp3PjPiFeeOLQ1LVxAByd475oHJsDdYzVqGfUzKsQx7imOJScUsyqCGryBXqwJ3Z+CBn6pwQLE0Hkg9WuUzgd6GuAczODpHP0jmoNq6rKuWuBaYgyit9tvlG40Bg7ieR8QvVV/g26zUGMcZdlLgZBlswNeZ1EqwrKgkikgakikgYkQnQggYAnAIBOQAIhIIhAQkkg90CUFU42x3sqLqcZTUDmTInLBBIEyD0P/AIWPVRrI0V4+Jl0+pUYCwta0OyyNTrDjPTQaKkBaiUxrwn0qeYgAbpj2qTwO1LnOIbnya5evhHNEWfhLhijWcO0qsgbta4SfDyV7v+BLN9OdKWUfNOkR+KVS8MtHXAeXWrWOaAWvaCwj6AGOevlKvdCtUuLKn3A55a6WuIAe5pywSdOSjTK+I8Ho0j+5rdqNZcGnKP64yk+SrRV/4qq3wpObUo9nTBI00BA2MSRPgFn1QqxDwE5qY1PmERpPwxYTnIqS0RLTuCemvy/4WgwqD8NbSHGqyQ1zS2oDEZgWlhbziC7qr+stEkikgagUUigCCKBQMRQCKAooIhAQiUAUSUGd/E/tO7JaKYnLG50Eg+P+Vmy0T4iWlZxzlv7sQZ0gDYARvus7e2D/ALzWolBTXC972dYHrChCdF7WtTK9pQbbd3hNq7sgC8tECQN4B16xJXpw1VrdlQaaVNoZId+9JdBO4GWDzmS1UZl06rQDWE5pEhu5bzCm7Kyqdm0Ujc03aGSCGTzmXQeXJZVcOLqbalu5kAyF8+3tOHuGmhP/AAtsxK/7OiTVcCQ3vEaAmNTHJYlePzPc4bOJI8pViV5tXvaUi9waBJcYA8145CdBr5K28A4O99bOAMtLV8+IMAdTt/sTaNSwfD2UWdxpaHBpyH8ByhsD2956qQhNYIAHQAJwWVJJEoIAgU5BA1BOTSg8kQmhOBQFOCbKMoHJIAqucb8R/sdEZINWoSKYOwj5nkcwJHqQgkuIbOnVoltWr2bJBc4uDQQOTi7TKsT4gp02VnClUZUbyczUe8Lxvb2rWdnrVHVHdXmY8hsB4Bc61iGbhFw09dEcsahXDC8HpuYyq3UOHPkeY8wZHogg8JxKpQcHD2Kun/uO5tLL2ROnUQo2vhDQdlE8QsawBrQoOHGOIK9y7vuhu+UbeqjGHqup9g4U+10Lc2UwdQ4yYI39fFWrh/gGvWdTfUhlJwDiZ70HkByKo5eH8Jew0a1QN7KqSGkGdW7gjlsfOCtfwnD6NNj302BpqAFx170TH3Kp/FdvQw+xYxgcZrNLJMkugzLuQyghV6t8SbvLkpspU2xE5S93uTH0UGsoqnfDziStdiq2uQ51PIQ4NDSQ7NIIGmhb05q4qKKUJBJAkEUCgagiUEHPKcEwFOlA5JBKUDpWJcZYz+1XT3gzTb3Kf8rfxR/EZPlHRaN8QcW7C0cGmH1v3TeoBHfcI6NkT1IWOhWJRCBRTSVUGVYuEsZbScaVUxTedHcmP2k9Gnn0jzVcCUorVb6hlGbp0+n6KsYzYZZq1iG7QPsAOZUdgnE9ShlY8drSadGkw5v8rungfouHGcTfc1XVHnSe63kxvID9TzUw1yOruzh7CWlplpG48VpHD/xMYW5bxhYQP+pTBc1x8WDVp8pHkszTHlUar8TK9K4sqdWlUa8Nqsd3SD3Xte3UbjUjdZiueg7Xz3Xugv8A8Io7WvqAcjIE7jM6SPLT+5aesH4VrvZeW5ZuarG6c2ucGuHlBK3iFKQkUklFBAooFACgUUCg5AnBecpwQekpBMBUbxLiX7Pa1av4g2Gfzu7rPqR7IMy4/wAW/aLtzQe5Rmk3xcD+8d/dp/SFWwEgitMgUwGUahQjkgISRSQBElJNPRAU0hFya1yAU9CugJgI2TmoO/Bbzsa9KqRIpva4jwB19YlfQC+c40X0Jh1bPSpv/Mxjv7mg/qpVjpSKCSikgUUCgEoIoII8FPBXgCngoPWVQPitfGKNuOZNV2vTus+7/ZXi6uW02OqPMNY0ucegAkrFMdxZ13WdWcMswGt/KwfKJ5nU+pKsSuABEpBKVUMdugkUggckkkgSDUiiEHm8po8NVJcPOy3DKhYHtY7MWmIdAMAzymFf6NuLsf8AyII/C0DKxngxg0b901WYtK9GlX3EuAAdaDiPB2qj7DhE0qzBdscaTtC5joLejj4A7+CaKtK+g8NEUaQy5Yps7p3b3Rp6Lhwfhu1th+5pAE/idL3H+p0kDyUuoEkkkopJpKKCAQkkhKCJBTwVzByeHoG4ra9tQq0vzsc3TxaQFhkdZB5jaDzBW8B6yLjSkxt7WDDuQ5w6Pc0FwHXXX1ViVDABFNBRVQHMQCuHAHDDbt7qlX/pU9A3btH7xP5QNT5jxUzxT8Pt6lqMrtzTJ7p/kJ+U+B08k1WbpL0r0HMcWPaWuaYLXCCPMFeaICcGkmBzQAUlZWsa80V34XbBoAVnsK2WFB2zV3OdAlZVesOuJAUq+g17SCqXgt/tqrxY1A4IObD3QDTJ+Xb+U7e23suyVxX1PI4PHLfxB3C6Q4HUbIPSUpTJSlA4lCUJQlAZQJQJQJQQGZEOQKCA17gMY552a0uPkBKxW5ruqPc93zPJcfMmT91p/GF22na1JOrx2bR1LtPtJ9FlYaSYG5ViU5pOy77fCq7/AJaTj7fqV14fZBvieZ/TyVx4ajNtsrokeEq9KhRp0X5qTwNcwgOc4yYdsdfHkrlb3YOjoI5FeFCo2oyCAQRBBAKhMRwV9OX2rspH/wBZMsP8v5fTRZVKY9wtb3je+0Ex3Xt0e3yP6ahZdxHwDc20upg1qY5tHfaPFnPzbPkFbsL40yv7Os0sqDdp0P8AyPESrlY4vSrDcKowCwt5MkKYp0lqnEHCNGvNRkNefxNG5/iHPz3Wd3lk6k803iHNMH/I8Cg8GJ1zU7pCJClOHcINzVDdmN7zz0HQeJ29+iKicIqPY4NdIkZm+LZI+4I9Fo2B3cgBQvxDsBT/AGesxoDWzRMDYfNT9NHj1SwC6CgulfvBclidCz8p08jt+q96D5C52jLVHR2n6j6j6oOqEIXvkQLEHjCGVe2RDIg8YQhe+RDIgrRKaSmZlxYvfCjRfUP4WkjxOzR7kIKHxxihq3Bpg9yl3R4v/Gf09FxYTafjO528Ao5jC92upJlx8zJKslq2AtI96dFSeH1yw+a5aa6GMUVcMGvhorJbOa9Z1aViwqyYbiGoMqDp4j4Uo3Te+3vDVrhuD+o8FRrq0r2j4kjo4bOH+8lq9rXDguPGMNZVYWuEg/TxBQcvBeKOrUu/82oPiuPjfCQ9vatHeZvHNvP2391BcIX5t7qra1NHDUdHDk4ekK/3ZDggyECdPQLUOGsI/ZqAafnd3qnmdm+g091EYNw60XjqmnZsh7G/xmY06CJ9Wq5AIIrHcLFzQqUT+NvdP5XjVh9CAsqwi6dTfkeMrmktcDyIMEe62rKs9+IvD+U/ttIdBWA9m1PsD6HqgnsHr5gurEWQA4biD6jVVXhTEJgK7VGhzSPBB6t1EjmJ90sq88KM0wObZafTb6QustQeEIZV75EC1B45Usq9g1LKgoBcoPjME2r45FhPlmCk3uIXjVqAgg6g6EHmDyKDO8LZoT4wpikUL3DG0DLD3HEkA/hPSeYXm1yqO+m9e/aLga9enbIO+3u4MHb7KVt65aVVnVV1UcSyENdqANTzbP3RV8w/EyOasVtfhwgrOLa5BALTIPMKVtL+FAeP8PLH0Lynux7WPjm1xgff6qy06pLi2dqZd9o/X2Vfxy57Sgaf5nUwP72lOZfmnUuXtDnsYxjJ55oc530LUFgs35Xipm07Nrj/ACGZPpoVYmhZ9VxB4ba1GtOVlJoq+FN4aJ9D+pVqw7Ew2KdQzlgB41BEd0u6GI180E0AmV7dr2uY8AtcC1wPNpEEey9WOBT4QY021dZXb7d2oaZYT+Jh1afbfxBV/wANuJC4/iRgxfSbdMHfofNHOkd/7Tr5FyiMAxIOA1QW7C3AVHs/MM48xofuPZSuVV6lXh7KnIGD/KdD9NfRWctQeGVLIvbKhlQeORLKvbKiGIKhe4L0Cq+LYPVE5VrDqQPJeFWwa7kg+f8AEqFXUGVFftBGh081vt/wvSqbtCrGJfD4OnKqjK23fikbtW69+HtRuzZ8lE1OFqjDrTPsgHDeHOuqoYHBo3LjrA8hufBWcfDivrFxSdO5LXt+gzR7qIsKtSho0ZfIQp6z4qqt31QeVD4f3tM9x1CP/wBHj3HZqXpcE3WWXPo5ujS+D6lq97TjQfiCnrLiei/8QCiqPe4dcUI7Wm5oaQQYzMkbd4afVMuqpbSLGuaTUDnvy7Z6k9NonbyWp0L+m7ZwK5brALSrqaTQd8zO4Z693f1lBWLa6AJpua2AxrI6iNfTVeuEUS0OplhIbox8gh1PUtaRM5mzBMa9dV3Ylwi5zi+nXJceVQDloO80dB0URWbcWx/esIb+Yat9xp6IJmgX09Wat3LTt6dCpiyvm1NtCN2ncf71Vas8Yad13ns3wZgjYgwR5EILE5oIIIkHQg8xzBWRYvYGxun0hOQ9+mf4HbCeoMj0WhU7mu35XteP4gPuIVA49xO5dUZTuKVIauNJ9LNOUjVrpJnYHlsgn8Kr9oyOoVwwa47SkJ+Zvdd5jY+oj6rNuH7vKafjP6K6U7h1MlzIGaJkSPA/f3QWPKhlVfq31Wdah8gG/wCFyVOIjOUVmgzBnICPogtUIgKGwrFC94YXZp/h16yCNCFOwgWVLKnwlCDzypZF6whlQeJpA8l5PsmHdoXZCUIImtgVB27B7LgrcIWzvwR5KywlCCmVuA6J+UkLgr8AOHyVPdaHlSyoMxdwleM+R/sSvSnh2Js2k+oWl5UsqDOW4lidP5qTj/TP2Xo3jOuzSrbnx0cPuFoeVA0x0QZhcY5YVfnoPpO/NTIH/bt9Fy/+rUmOHZ1szT+YFpHny9ZWpVcPpO+amx3m0H7hRl1whY1Pmtqf9IyH3aQgqwxCWZp9OqrePXbbksy7sknwkQAr834f2jQRTdXYDybVJHs8OVWOENs31abm1QzMXNqVBLXgxr2jRlHSNCgjbW20bygSD9/srdYVpAnmAqtdYnSpjV7SORBBXfgt8yoyWOkTA/wgm7txZqNlwXFUF20dYp5ifIjdSk5hBG6ZgWEMNWWim17TmDjmdUJ5wXcvX0Qd/D2DFr+2qMhwEMkNDocO9IGvoVYoTmNPPVOhAyEYT4ShAyEQE6EYQMhKE+EYQMhKE+EoQMARhOhGEDIRhOhKEDYShOhKEDYShOhKEDYSToShBDY1w1a3TS2rRYZ/EGgOB6hw1Wc1+E6+G1HOptdVtnfMWAlzI2cWDXzIG3kFr8JQgzSwxlrxDXAnqDI3XXbvdJcT8uxG+viNlasU4ct67hUczLUExUZDXwdwTEOHg4FeVDhwNOtV5HSGg+pj7AIO3Caj3UgX7mYJ3I5TC7IRa0AQNhoPJGEHAMQbza4ek/ZOZfMOuvqCPuuQH7p7UHY28YefvonmsOq5GBNpsAaIA9kHaLhp2I0ThUHULhqNEbBMbzQSgKQcFHA6FBx0/wB8EEmEs64Q8yNT/oXNa1nFplx+Z/M8nmEEwHSlKZTOieUClFMcUwHU+aD2lKUCmt5oHpQg1EoEkgigUpJrk5qBQlCBSKD/2Q=="
+                                            class="mr-3 rounded-circle" width="50" alt="User" /></a>
+                                    <div class="media-body">
+                                        <h6><a href="#" data-toggle="collapse" data-target=".forum-content"
+                                                class="text-body">Emma OBRO</a></h6>
+                                        <p class="text-secondary">
+                                            Front-end developper
+                                        </p>
+                                        <p class="text-muted"><a href="javascript:void(0)">Stephanie</a> a repondu <span
+                                                class="text-secondary font-weight-bold">Il y a 7 heures</span></p>
+                                    </div>
+                                    <div class="text-muted small text-center align-self-center">
+                                        <span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 32</span>
+                                        <span><i class="far fa-comment ml-2"></i> 2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2">
+                            <div class="card-body p-2 p-sm-3">
+                                <div class="media forum-item">
+                                    <a href="#" data-toggle="collapse" data-target=".forum-content"><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy_L5YCfYzFzEvT56ijncOWEUI0KWjUEsbzA&s"
+                                            class="mr-3 rounded-circle" width="50" alt="User" /></a>
+                                    <div class="media-body">
+                                        <h6><a href="#" data-toggle="collapse" data-target=".forum-content"
+                                                class="text-body">Ange AGNES</a></h6>
+                                        <p class="text-secondary">
+                                            Database beginner
+                                        </p>
+                                        <p class="text-muted"><a href="javascript:void(0)">Roxanne</a> a repondu <span
+                                                class="text-secondary font-weight-bold">Il y a 3 minutes</span></p>
+                                    </div>
+                                    <div class="text-muted small text-center align-self-center">
+                                        <span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 9</span>
+                                        <span><i class="far fa-comment ml-2"></i> 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2">
+                            <div class="card-body p-2 p-sm-3">
+                                <div class="media forum-item">
+                                    <a href="#" data-toggle="collapse" data-target=".forum-content"><img
+                                            src="https://img.freepik.com/photos-gratuite/femme-aux-cheveux-boucles-souriant_144627-44057.jpg"
+                                            class="mr-3 rounded-circle" width="50" alt="User" /></a>
+                                    <div class="media-body">
+                                        <h6><a href="#" data-toggle="collapse" data-target=".forum-content"
+                                                class="text-body">Roxanne KOUAKOU</a></h6>
+                                        <p class="text-secondary">
+                                            Game developper
+                                        </p>
+                                        <p class="text-muted"><a href="javascript:void(0)">Emma</a> a repondu <span
+                                                class="text-secondary font-weight-bold">Il ya 12 minutes</span></p>
+                                    </div>
+                                    <div class="text-muted small text-center align-self-center">
+                                        <span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 65</span>
+                                        <span><i class="far fa-comment ml-2"></i> 10</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="inner-main-body p-2 p-sm-3 collapse forum-content">
+                        <a href="#" class="btn btn-light btn-sm mb-3 has-icon" data-toggle="collapse"
+                            data-target=".forum-content"><i class="fa fa-arrow-left mr-2"></i>Retour</a>
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <div class="media forum-item">
+                                    <a href="javascript:void(0)" class="card-link">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUq1a5vqvxvuU1zJDPF0g2_xqggrjEOB-tFfKdxqFqlJmTRb7m0GA0yfZhyVGvQzB4NDU&usqp=CAU"
+                                            class="rounded-circle" width="50" alt="User" />
+                                        <small class="d-block text-center text-muted">Débutante</small>
+                                    </a>
+                                    <div class="media-body ml-3">
+                                        <a href="javascript:void(0)" class="text-secondary">Adi Naple</a>
+                                        <small class="text-muted ml-2">Il y a 1 heure</small>
+                                        <div class="mt-3 font-size-sm">
+                                            <p>Coucou les filles</p>
+                                            <p>
+                                                Je suis débutant avec Laravel et je souhaite récupérer les données de la
+                                                base de données en temps réel pour l'analyse de mon tableau de bord et
+                                                j'ai trouvé une solution avec ajax mais ça ne marche pas si quelqu'un a
+                                                une solution simple, ça sera utile.
+                                            </p>
+                                            <p>Merci d'avance</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-muted small text-center">
+                                        <span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 19</span>
+                                        <span><i class="far fa-comment ml-2"></i> 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <div class="media forum-item">
+                                    <a href="javascript:void(0)" class="card-link">
+                                        <img src="https://st2.depositphotos.com/1514397/5893/i/450/depositphotos_58939069-stock-photo-woman-with-ideal-skin.jpg"
+                                            class="rounded-circle" width="50" alt="User" />
+                                        <small class="d-block text-center text-muted">Pro</small>
+                                    </a>
+                                    <div class="media-body ml-3">
+                                        <a href="javascript:void(0)" class="text-secondary">Stephanie</a>
+                                        <small class="text-muted ml-2">Il y a 1 heure</small>
+                                        <div class="mt-3 font-size-sm">
+                                            <p>Qu'est ce qui ne fonctionne pas exactement ?</p>
+                                            <p>De plus, les WebSockets constituent une excellente solution pour les
+                                                données en temps réel sur un tableau de bord. Laravel propose cela dès
+                                                le départ en utilisant la diffusion</p>
+                                        </div>
+                                        <button class="btn btn-xs text-muted has-icon"><i class="fa fa-heart"
+                                                aria-hidden="true"></i>1</button>
+                                        <a href="javascript:void(0)" class="text-muted small">Répondre</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="modal fade" id="threadModal" tabindex="-1" role="dialog" aria-labelledby="threadModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header d-flex align-items-center bg-primary text-white">
+                                <h6 class="modal-title mb-0" id="threadModalLabel">Nouvelle discussion</h6>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="threadTitle">Titre</label>
+                                    <input type="text" class="form-control" id="threadTitle"
+                                        placeholder="Entrer le titre" autofocus />
+                                </div>
+                                <textarea class="form-control summernote" style="display: none;"></textarea>
+                                <div class="custom-file form-control-sm mt-3" style="max-width: 300px;">
+                                    <input type="file" class="custom-file-input" id="customFile" multiple />
+                                    <label class="custom-file-label" for="customFile">Pièce jointe</label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Annuler</button>
+                                <button type="button" class="btn btn-primary">Poster</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+</html>
