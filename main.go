@@ -18,6 +18,7 @@ func main() {
 	// Définir les autres routes
 	http.HandleFunc("/", controllers.IndexHandler)
 	http.HandleFunc("/form", controllers.FormHandler)
+	http.HandleFunc("/register", controllers.RegisterUserHandler)
 	// Démarrer le serveur HTTP sur le port 8080
 	fmt.Println("Server running on port 8081")
 	log.Fatal(http.ListenAndServe(":8081", nil))

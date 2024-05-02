@@ -14,6 +14,7 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
+
           <form action="#" class="sign-in-form">
             <h2 class="title">Se connecter </h2>
             <div class="input-field">
@@ -26,22 +27,24 @@
             </div>
             <input type="submit" value="Se connecter" class="btn solid" />
           </form>
+
           <form action="#" class="sign-up-form">
             <h2 class="title">S'inscrire</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Username" class="username"/>
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" class="email" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Mot de passe" />
+              <input type="password" placeholder="Mot de passe" class="password" />
             </div>
             <input type="submit" class="btn" value="Inscription" />
           </form>
+
         </div>
       </div>
 
@@ -74,5 +77,6 @@
     </div>
 
     <script src="../resources/js/app.js"></script>
+    <script src="../resources/js/validate.js"></script>
   </body>
 </html>

@@ -45,3 +45,11 @@ func InitDB() (*sql.DB, error) {
 
 	return db, nil
 }
+
+func GetDb() (db *sql.DB, err error) {
+	db, err = sql.Open("sqlite3", "./forum.db")
+	if err != nil {
+		return nil, err
+	}
+	return
+}
