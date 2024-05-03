@@ -1,11 +1,11 @@
 # Spécifie l'image de base à utiliser pour l'image Docker. Dans ce cas, 
 # c'est une image latest de go: derniere version.
-FROM golang:1.16-alpine
-# Définit le répertoire de travail à l'intérieur du conteneur sur /src/ascii-art-web
+FROM golang:1.23
+# Définit le répertoire de travail à l'intérieur du conteneur s
 # C'est là que les commandes suivantes seront exécutées.
 # Ajoute une étiquette personnalisée à l'image
 LABEL version="1.0" \
-    description="Mon application web assci -art-web" \
+    description="Mon application forum" \
     maintainer="kouakou stephanie"
 WORKDIR /app
 # Copie le fichier go.mod depuis le contexte de construction (généralement le répertoire local où la commande de construction Docker est exécutée)
