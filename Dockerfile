@@ -19,6 +19,6 @@ COPY . .
 RUN go build -o main .
 # This container exposes port 8080 to the outside world
 #Informe Docker que le conteneur écoutera sur le port 8080 au moment de l'exécution. Cependant, cela ne publie pas effectivement le port, c'est plus une fonctionnalité de documentation.
-EXPOSE 8000
+EXPOSE 8081
 # cmd to start service
 CMD ["./main"]
