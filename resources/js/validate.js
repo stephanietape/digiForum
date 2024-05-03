@@ -7,6 +7,40 @@ document.querySelector(".sign-up-form").addEventListener("submit", function (eve
     var email = document.querySelector(".email").value;
     var password = document.querySelector(".password").value;
 
+
+    // Valider les champs du formulaire
+    if (!validateUsername(username)) {
+        let MyError = document.getElementById('error');
+        MyError.textContent = "Le nom d'utilisateur doit contenir uniquement des lettres et des tirets.";
+        MyError.style.color = 'red';
+        return; // Arrête la soumission du formulaire si le nom d'utilisateur n'est pas valide
+    } else {
+        let MyError = document.getElementById('error');
+        MyError.textContent = ""; // Efface le message d'erreur s'il y en a un
+    }
+
+    if (!validateEmail(email)) {
+        let MyError = document.getElementById('error1');
+        MyError.textContent = "Veuillez entrer une adresse email valide.";
+        MyError.style.color = 'red';
+        return;
+    } else {
+        let MyError = document.getElementById('error1');
+        MyError.textContent = ""; // Efface le message d'erreur s'il y en a un
+    }
+
+    if (!validatePassword(password)) {
+        let MyError = document.getElementById('error2');
+        MyError.textContent = "Contraintes pour mot de passe:8 caractères,majuscule,chiffre,caractère spécial";
+        MyError.style.color = 'red';
+        return;
+
+    } else {
+        let MyError = document.getElementById('error2');
+        MyError.textContent = ""; // Efface le message d'erreur s'il y en a un
+    }
+
+
     // Créer un objet contenant les données du formulaire
     var formData = {
         username: username,
@@ -71,6 +105,24 @@ document.querySelector(".sign-up-form").addEventListener("submit", function (eve
 
         });
 });
+
+function validateUsername(username) {
+    // Expression régulière pour vérifier si le nom d'utilisateur contient uniquement des lettres et des tirets
+    const usernameRegex = /^[a-zA-Z-]+$/;
+    return usernameRegex.test(username);
+}
+
+function validateEmail(email) {
+    // Expression régulière pour valider une adresse email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+function validatePassword(password) {
+    // Expression régulière pour valider le mot de passe
+    const passwordRegex = /^(?=.[A-Z])(?=.[0-9])(?=.[!@#$%^&])(?=.{8,})/;
+    return passwordRegex.test(password);
+}
 
 // Envoie du formulaire au serveur | CONNEXION
 document.querySelector(".sign-in-form").addEventListener("submit", function (event) {

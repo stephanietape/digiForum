@@ -19,11 +19,11 @@
           <h2 class="title">Se connecter </h2>
           <div class="input-field">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username" class="usernamePass" />
+            <input type="text" placeholder="Username" class="usernamePass" required />
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Mot de passe" class="motdepasse" />
+            <input type="password" placeholder="Mot de passe" class="motdepasse" required />
           </div>
           <input type="submit" value="Se connecter" class="btn solid" />
           <div id="notificationCon"> </div>
@@ -36,14 +36,17 @@
             <i class="fas fa-user"></i>
             <input type="text" placeholder="Username" class="username" required />
           </div>
+          <p id="error" style="font-size: small;"></p>
           <div class="input-field">
             <i class="fas fa-envelope"></i>
             <input type="email" placeholder="Email" class="email" />
           </div>
+          <p id="error1" style="font-size: small;"></p>
           <div class="input-field">
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Mot de passe" class="password" />
           </div>
+          <p id="error2" style="font-size: small;"></p>
           <input type="submit" class="btn" value="Inscription" />
           <div id="notification"> </div>
         </form>
