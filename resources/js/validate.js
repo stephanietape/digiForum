@@ -1,7 +1,6 @@
 // Envoie du formulaire au serveur | INSCRIPTION
 document.querySelector(".sign-up-form").addEventListener("submit", function (event) {
     event.preventDefault(); // Empêche l'envoi du formulaire par défaut
-
     // Récupérer les valeurs des champs du formulaire
     var username = document.querySelector(".username").value;
     var email = document.querySelector(".email").value;
@@ -29,7 +28,7 @@ document.querySelector(".sign-up-form").addEventListener("submit", function (eve
         MyError.textContent = ""; // Efface le message d'erreur s'il y en a un
     }
 
-    if (!validatePassword(password)) {
+    /*if (!validatePassword(password)) {
         let MyError = document.getElementById('error2');
         MyError.textContent = "Contraintes pour mot de passe:8 caractères,majuscule,chiffre,caractère spécial";
         MyError.style.color = 'red';
@@ -38,7 +37,7 @@ document.querySelector(".sign-up-form").addEventListener("submit", function (eve
     } else {
         let MyError = document.getElementById('error2');
         MyError.textContent = ""; // Efface le message d'erreur s'il y en a un
-    }
+    }*/
 
 
     // Créer un objet contenant les données du formulaire
@@ -118,11 +117,11 @@ function validateEmail(email) {
     return emailRegex.test(email);
 }
 
-function validatePassword(password) {
+/*function validatePassword(password) {
     // Expression régulière pour valider le mot de passe
     const passwordRegex = /^(?=.[A-Z])(?=.[0-9])(?=.[!@#$%^&])(?=.{8,})/;
     return passwordRegex.test(password);
-}
+}*/
 
 // Envoie du formulaire au serveur | CONNEXION
 document.querySelector(".sign-in-form").addEventListener("submit", function (event) {

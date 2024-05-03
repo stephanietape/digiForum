@@ -192,6 +192,38 @@ func DeconnexionHandler(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, "/", http.StatusFound)
 }
 
+// reset_password
+/*func reset_passwordHandler(w http.ResponseWriter, r *http.Request) {
+	// Vérifier la méthode HTTP
+	if r.Method != http.MethodPost {
+		http.Error(w, "Méthode non autorisée", http.StatusMethodNotAllowed)
+		return
+	}
+	// Récupérer les données du formulaire
+	ancienMotDePasse := r.FormValue("ancien_mot_de_passe")
+	nouveauMotDePasse := r.FormValue("nouveau_mot_de_passe")
+	// Vérifier l'authentification de l'utilisateur
+	// (vous pouvez utiliser la session ou toute autre méthode d'authentification que vous avez mise en place)
+
+	// Vérifier si l'ancien mot de passe correspond au mot de passe actuel de l'utilisateur
+	// (vous devrez adapter cette vérification à votre modèle de données)
+	if ancienMotDePasse != motDePasseActuel {
+		http.Error(w, "Ancien mot de passe incorrect", http.StatusBadRequest)
+		return
+	}
+
+	// Mettre à jour le mot de passe de l'utilisateur avec le nouveau mot de passe
+	// (vous devrez adapter cette mise à jour à votre modèle de données)
+	err := MettreAJourMotDePasseUtilisateur(userID, nouveauMotDePasse)
+	if err != nil {
+		http.Error(w, "Erreur lors de la mise à jour du mot de passe", http.StatusInternalServerError)
+		return
+	}
+
+	// Rediriger l'utilisateur vers une page de confirmation ou une autre page appropriée
+	http.Redirect(w, r, "/profil", http.StatusFound)
+}*/
+
 // fonction pour verifier si un utilisateur exist dans la base de donnée
 func userExists(value string, column string) bool {
 	// Ouvrir la connexion à la base de données
